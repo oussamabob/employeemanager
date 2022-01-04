@@ -6,7 +6,7 @@ import java.io.Serializable;
 public class Employee implements Serializable {
      @Id
      @GeneratedValue(strategy = GenerationType.AUTO)
-     @Column(nullable = false,updatable = false)
+    @Column(nullable = false,updatable = false)
     private Long id;
     private String name;
     private String email;

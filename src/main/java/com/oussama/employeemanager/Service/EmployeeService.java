@@ -30,7 +30,7 @@ public class EmployeeService {
         return   employeeRepository.save(employee);
     }
     public Employee findEmployeeById(Long id){
-        return employeeRepository.findEmployeeByID(id).orElseThrow(()->new UserNotFoundException("User by Id"+id+" Not Found"));
+        return employeeRepository.findEmployeeById(id).orElseThrow(()->new UserNotFoundException("User by Id"+id+" Not Found"));
     }
     public void deleteEmployee(Long id){
         employeeRepository.deleteEmployeeById(id);
